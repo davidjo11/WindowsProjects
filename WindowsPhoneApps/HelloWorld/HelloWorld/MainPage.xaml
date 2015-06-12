@@ -8,7 +8,17 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid >
+        <TextBlock HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" Text="MON APPLICATION" VerticalAlignment="Top" Height="25" Width="162" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,40,0,0" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Top" Height="56" Width="307" FontSize="48"/>
+        <Grid HorizontalAlignment="Left" Height="502" Margin="22,116,0,0" VerticalAlignment="Top" Width="368">
+            <StackPanel>
+                <TextBlock Text="Saisir votre nom" HorizontalAlignment="Center" FontSize="14" />
+                <TextBlock x:Name="Resultat" Foreground="Red" Margin="0,0,-1.667,0" />
+                <TextBox x:Name="Nom" Margin="10,5,10,5" RenderTransformOrigin="0.499,0.552"  />
+                <Button Content="Valider" Tapped="Button_Tap_1" Width="348" Margin="10,0,0,0" />
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Page>
