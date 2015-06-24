@@ -44,5 +44,14 @@ namespace HelloWorld
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        private void Button_Tap_1(object sender, TappedRoutedEventArgs e)
+        {
+            Resultat.Text = "Bonjour " + Nom.Text;
+        }
+        private void hi_text_box(object sender, TextChangedEventArgs e)
+        {
+            Resultat.Text += "\nHi, " + Nom.Text;
+        }
     }
 }
