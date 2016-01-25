@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Project_DotNET.Models
@@ -79,12 +80,12 @@ namespace Project_DotNET.Models
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Date de naissance")]
-        public string birthday { get; set; }
+        public DateTime birthday { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Date d'entrée dans l'entreprise")]
-        public string firstDay { get; set; }
+        public  DateTime firstDay { get; set; }
 
         [Required]
         [EmailAddress]

@@ -26,13 +26,13 @@
     <div class="form-group">
         @Html.LabelFor(m => m.birthday, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.birthday, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.birthday, new { @class = "form-control" , type = "date" })
         </div>
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.firstDay, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.firstDay, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.firstDay, new { @class = "form-control", type = "date" })
         </div>
     </div>
     <div class="form-group">
